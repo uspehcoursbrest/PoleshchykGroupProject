@@ -1,43 +1,59 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <title>Корпоративным клиентам</title>
     <link rel="stylesheet" href="fonts/stylesheet.css">
 </head>
 <body>
-<div>
-    <label for=""></label>
-    <input type="text" id=""></div>
-<div>
-    <label for=""></label>
-    <input type="text" id=""></div>
-<div>
-    <label for=""></label>
-    <input type="text" id=""></div>
-<div>
+<!---->
+<form action="">
     <div>
-        <span></span>
-        <span></span>
+        <label for="company">Название организации</label>
+        <input type="text" name="company" id="company">
+    </div>
+    <div>
+        <label for="man">Контактное лицо</label>
+        <input type="text" name="man" id="man">
+    </div>
+    <div>
+        <label for="phone">Номер телефона</label>
+        <input type="text" name="phone" id="phone">
     </div>
     <div>
         <div>
-            <label></label>
-            <input type="radio">
-            <label></label>
-            <input type="radio">
+            <span>Нанесение логотипа</span>
+            <span>занимает 20 рабочих дней</span>
         </div>
         <div>
-            <label></label>
-            <input type="radio">
-            <label></label>
-            <input type="radio">
+            <label for="yes">Да</label>
+            <input type="radio" name="logo" id="yes" value="yes">
+            <label for="no">Нет</label>
+            <input type="radio" name="logo" id="no" value="no">
         </div>
+        <div>
+            <span>Прикрепите логотип</span>
+            <input type="file" name="" id="">
+            <span>.cdr, .ai, .eps, .tiff</span>
+        </div>
+        <div>
+            <label for="figure">Колличество фигур</label>
+            <select name="figure" id="figure">
+                <option value="50">50</option>
+                <option value="100">100</option>
+                <option value="150">150</option>
+            </select>
+        </div>
+        <div>
+            <label name="timOrder">Подготовить заказ к</label>
+            <input type="date" name="timOrder" id="timOrder">
+        </div>
+        <div>
+            <label name="massage">Дополнительная информация</label>
+            <textarea name="massage" id="massage"></textarea>
+        </div>
+        <input type="submit" value="Отправить">
     </div>
-    <div>
-        <input type="download">
-        <span></span>
-    </div>
-</div>
+</form>
 </body>
 </html>
